@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khisaal - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(35, 35, 128);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .button {
+            padding: 30px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(8, 8, 116);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .rightSection img {
+            width: 120%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .thirdSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        .thirdSection .aboutMe {
+            margin-top: 30px;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.8rem;
+        }
+
+        .fourthSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        .fourthSection .skills {
+            margin-top: 30px;
+        }
+
+        .fourthSection .strengths {
+            margin-top: 30px;
+        }
+
+        .fourthSection .str1 {
+            margin-top: 50px;
+        }
+
+        .fifthSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        .fifthSection .projects {
+            margin-top: 30px;
+        }
+
+        .secondSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 82vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.8rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 40px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            background: white;
+            width: 1px;
+            height: 95px;
+            margin: 0 250px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 100px;
+            left: -70px;
+            text-align: center;
+            width: 160px;
+            font-size: 16px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 110px;
+            text-align: center;
+            left: -70px;
+            color: gray;
+            width: 160px;
+            font-size: 15px;
+        }
+
+        .sixthSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+
+        footer {
+            background-color: rgb(12, 12, 40);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Khisaal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> Syed Khisaal Ahmed</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="Syed_Khisaal_Ahmed_Resume.pdf" download class="btn">Download Resume</a>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" ;>
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="thirdSection">
+            <div>
+                <h1>About Me</h1>
+                <p class="aboutMe">A dedicated Bachelor's of Computer Applications (BCA) student with strong analytical
+                    and
+                    problem-solving
+                    skills. Proficient in programming languages such as C/C++, Java and Python. Eager to apply technical
+                    expertise and a quick-learning mindset to contribute effectively in a Software Development Role.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="education" class="secondSection">
+            <h1>Education</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        St. Aloysius Degree College<br>(2023-2026)
+                    </div>
+                    <div class="vertical-desc">
+                        Pursuing Bachelors Degree in Computer Applications
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        Indian Academy PU College<br>(2021-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Completed 2nd PUC with PCMC Combination
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="fourthSection">
+            <div>
+                <h1>Skills</h1>
+                <p class="skills">Programming Languages: C/C++, Java, Python<br>
+                    Web Development: HTML, CSS, JavaScript<br>
+                    Database Management: SQL Plus<br>
+                    Version Control: Git<br>
+                    AI Tools: ChatGPT, GitHub Copilot, Google Gemini<br>
+                    Office Tools: Microsoft Word, Excel, PowerPoint<br>
+                </p>
+                <h1 class="str1">Strengths</h1>
+                <p class="strengths">
+                    Quick learner with strong adaptability<br> Analytical thinker with problem-solving skills<br>
+                    Hardworking and dedicated professional<br>Team-oriented with effective communication
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="fifthSection">
+            <div>
+                <h1>Projects</h1>
+                <p class="projects">
+                    1. Personal Portfolio Website: Developed a responsive portfolio website using HTML, CSS, and
+                    JavaScript to showcase my skills, projects, and contact information.<br>
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="contact" class="sixthSection">
+            <div>
+                <h1>Contact Me</h1>
+                <p class="contact">
+                    Email: mr.khisaal5405@gmail.com<br>
+                    Phone: +91 85539 36328<br>
+                    HBR Layout, Bangalore - 560043
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-rights">
+            Copyright &#169; Syed Khisaal Ahmed | All rights reserved.
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Prompt Engineer'],
+            loop: true,
+            typeSpeed: 90,
+        });
+    </script>
+</body>
+
+</html>
