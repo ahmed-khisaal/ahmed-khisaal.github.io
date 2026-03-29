@@ -24,12 +24,21 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        p {
+            line-height: 1.7;
+        }
+
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding: 0 8%;
             align-items: center;
             height: 80px;
             background-color: rgb(35, 35, 128);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
 
         nav ul {
@@ -49,7 +58,6 @@
 
         nav ul li a:hover {
             color: rgb(170, 107, 228);
-            font-size: 1.01rem;
         }
 
         main hr {
@@ -57,6 +65,17 @@
             background: #9c97f1;
             height: 1.2px;
             margin: 60px 84px;
+        }
+
+        .button {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #aa6be4;
         }
 
         .left {
@@ -82,14 +101,23 @@
             padding: 30px 0;
         }
 
-        .leftSection .btn {
-            padding: 12px;
+        .btn {
+            padding: 12px 20px;
             background-color: rgb(8, 8, 116);
             color: white;
             border: 2px solid white;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 15px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(170, 107, 228);
+            color: black;
+            transform: translateY(-2px);
         }
 
         .rightSection img {
@@ -107,7 +135,7 @@
         .thirdSection {
             margin: auto;
             max-width: 80vw;
-            height: 80vh;
+            min-height: 80vh;
         }
 
         .thirdSection .aboutMe {
@@ -121,7 +149,7 @@
         .fourthSection {
             margin: auto;
             max-width: 80vw;
-            height: 80vh;
+            min-height: 80vh;
         }
 
         .fourthSection .skills {
@@ -139,7 +167,7 @@
         .fifthSection {
             margin: auto;
             max-width: 80vw;
-            height: 80vh;
+            min-height: 80vh;
         }
 
         .fifthSection .projects {
@@ -149,7 +177,7 @@
         .secondSection {
             margin: auto;
             max-width: 80vw;
-            height: 82vh;
+            min-height: 82vh;
         }
 
         .secondSection h1 {
@@ -168,7 +196,7 @@
             background: white;
             width: 1px;
             height: 95px;
-            margin: 0 250px;
+            margin: 0 200px;
         }
 
         .vertical-title {
@@ -193,7 +221,7 @@
         .sixthSection {
             margin: auto;
             max-width: 80vw;
-            height: 80vh;
+            min-height: 80vh;
         }
 
         footer {
@@ -238,12 +266,14 @@
                 <div>and I am a Passionate</div>
                 <span id="element"></span>
                 <div class="button">
+                    <a href="https://www.linkedin.com/in/syed-khisaal-ahmed-321270226" target="_blank" class="btn">Visit
+                        LinkedIn</a>
+                    <a href="https://github.com/ahmed-khisaal" target="_blank" class="btn">Visit GitHub</a>
                     <a href="Syed_Khisaal_Ahmed_Resume.pdf" download class="btn">Download Resume</a>
-                    <button class="btn">Visit GitHub</button>
                 </div>
             </div>
             <div class="rightSection">
-                <img src="bg.jpg" ;>
+                <img src="bg.jpg" alt="Profile Image">
             </div>
         </section>
         <hr>
@@ -304,7 +334,8 @@
                 <h1>Projects</h1>
                 <p class="projects">
                     1. Personal Portfolio Website: Developed a responsive portfolio website using HTML, CSS, and
-                    JavaScript to showcase my skills, projects, and contact information.<br>
+                    JavaScript to showcase my skills, projects, and contact information.<br><br>
+                    <a href="https://ahmed-khisaal.github.io/" target="_blank" class="btn">View Project</a>
                 </p>
             </div>
         </section>
@@ -313,7 +344,7 @@
             <div>
                 <h1>Contact Me</h1>
                 <p class="contact">
-                    Email: mr.khisaal5405@gmail.com<br>
+                    Email: <a href="mailto:mr.khisaal5405@gmail.com">mr.khisaal5405@gmail.com</a><br>
                     Phone: +91 85539 36328<br>
                     HBR Layout, Bangalore - 560043
                 </p>
